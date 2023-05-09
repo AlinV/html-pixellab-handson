@@ -1,4 +1,52 @@
+body {
+  padding-top: 15px;
+  padding-right: 340px;
+}
+
 .container {
-  border: 1px solid #000; 
+  border: 1px solid #000;
   padding: 5px;
+  position: relative;
+}
+
+.nav-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: blue;
+  color: brown;
+  z-index: 1;
+}
+
+.nav-bottom a {
+  color: brown;
+}
+
+.legend {
+  position: absolute;
+  background-color: gray;
+  border: 1px solid red;
+  top: -15px;
+  left: 20px;
+}
+.nav-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: green;
+  z-index: 1;
+}
+.sup {
+  position: relative;
+  top: -5px;
+  font-size: x-small;
+}
+.section-title {
+  position: sticky;
+  top: 8px;
+  text-align: center;
+  background-color: green;
+  color: white;
+  padding-top: 8px;
+  padding-bottom: 8px;
 }
