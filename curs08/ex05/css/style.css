@@ -49,4 +49,5 @@ body {
   color: white;
   padding-top: 8px;
   padding-bottom: 8px;
+  z-index: 1;
 }
