@@ -1,0 +1,460 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
+    url('../fonts/Roboto-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Black.woff2') format('woff2'),
+    url('../fonts/Roboto-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+    url('../fonts/Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-LightItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-ThinItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Thin.woff2') format('woff2'),
+    url('../fonts/Roboto-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/* fonts */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: #707070;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1278px;
+}
+
+/* header */
+.header {
+  margin: 30px auto;
+}
+
+.header-secondary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-contact li {
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.header-contact a i[class*='fa-'] {
+  color: #ff6b6b;
+  font-size: 24px;
+  margin-right: 8px;
+  position: relative;
+  bottom: -4px;
+}
+
+.header-controls ul {
+  display: flex;
+  gap: 40px;
+}
+
+.header-account a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-account .icon {
+  font-size: 20px;
+}
+
+.header-cart {
+  display: inline-flex;
+  align-items: center;
+}
+
+.header-cart i:first-child {
+  color: #000;
+  font-size: 32px;
+}
+
+.header-primary {
+  text-align: center;
+}
+
+.nav-primary {
+  margin-bottom: 16px;
+}
+
+.nav-primary li {
+  display: inline-flex;
+}
+
+.nav-primary a {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 300;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 36px;
+  transition: color 0.2s ease 0.2s, background-color 0.2s ease 0.2s;
+}
+
+.nav-primary a:hover {
+  background: #ff6b6b;
+  color: #fff;
+}
+
+.nav-secondary li {
+  display: inline-flex;
+  margin: 0 18px;
+}
+
+.nav-secondary a {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  transition: color 0.2s ease 0.2s;
+}
+
+.nav-secondary a:hover {
+  color: #ff6b6b;
+}
+/* header */
+
+/* footer */
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 80px;
+}
+
+/* foote-primary */
+.footer-primary {
+  display: flex;
+  flex-wrap: wrap;
+  background: #1b1927 no-repeat right/477px
+    url('../images/banners/banner-06.jpg');
+  margin-bottom: 22px;
+  color: #aeaeae;
+}
+
+.footer-menu {
+  display: flex;
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  gap: 12px;
+  width: 100%;
+  margin-top: 48px;
+  margin-left: 48px;
+  margin-bottom: 40px;
+  gap: 60px;
+}
+
+.footer-menu li {
+  margin-bottom: 6px;
+}
+
+.footer-support {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 34px;
+  margin-top: 20px;
+}
+
+.footer-support ul {
+  display: flex;
+  margin-left: 48px;
+  gap: 32px;
+}
+
+.footer-support .icon {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  color: #ff6b6b;
+}
+
+.footer-contact {
+  margin-top: 6px;
+  margin-left: 127px;
+  font-weight: 300;
+}
+
+.footer-contact h1 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.footer-contact h1 span {
+  font-weight: 500;
+}
+
+.footer-contact p a:last-child {
+  color: #ff6b6b;
+}
+/* footer-primary */
+
+/* footer-secondary */
+.footer-secondary {
+  text-align: center;
+}
+
+.footer-secondary p:first-child {
+  margin-bottom: 8px;
+}
+
+.footer-secondary p:last-child {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-secondary a {
+  margin-left: 6px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer-secondary span {
+  color: #ec1c2e;
+  font-weight: bold;
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 4px 0;
+  z-index: 1;
+}
+
+.footer-secondary a:hover span {
+  display: inline-flex;
+}
+
+/* footer-secondary */
+/* footer */
