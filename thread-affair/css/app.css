@@ -559,7 +559,7 @@ a {
 }
 
 .catalog-preview .catalog-ctas a {
-  display: block;
+  display: inline-block;
 }
 
 .catalog-preview .catalog-ctas span::before,
