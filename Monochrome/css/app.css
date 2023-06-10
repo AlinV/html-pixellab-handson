@@ -1,0 +1,766 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: ' ';
+  src: url('../fonts/PlayfairDisplay-BlackItalic.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Black.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-ExtraBold.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Medium.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-BoldItalic.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-MediumItalic.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-SemiBold.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-ExtraBoldItalic.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-ExtraBoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Thin.woff2') format('woff2'),
+    url('../fonts/Roboto-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Black.woff2') format('woff2'),
+    url('../fonts/Roboto-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-BlackItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-LightItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-MediumItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-ThinItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Italic.woff2') format('woff2'),
+    url('../fonts/Roboto-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-BoldItalic.woff2') format('woff2'),
+    url('../fonts/Roboto-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Light.woff2') format('woff2'),
+    url('../fonts/Roboto-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-SemiBoldItalic.woff2') format('woff2'),
+    url('../fonts/PlayfairDisplay-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Medium.woff2') format('woff2'),
+    url('../fonts/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Playfair Display', sans-serif;
+  color: #2b2b2b;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1356px;
+  margin: 0 auto;
+}
+
+input:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+/* header */
+.banner-header {
+  background: #000 url('../images/banner.png') no-repeat center center / cover;
+  height: 497px;
+}
+
+.banner-header .banner-header-inner {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+/* header-contact */
+.banner-header .header-contact {
+  width: 27.20427728613569%;
+  font-family: inherit;
+  font-size: inherit;
+  color: #fff;
+}
+
+.banner-header .header-contact ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  line-height: 21px;
+  gap: 30px;
+}
+/* ./header-contact */
+
+/* header-controls */
+.banner-header .header-controls {
+  width: 31.71091445427729%;
+  display: flex;
+  gap: 36px;
+  font-family: 'Roboto', sans-serif;
+  color: inherit;
+  font-size: 24px;
+}
+
+.banner-header .header-controls ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+}
+
+.banner-header .header-controls form {
+  width: 59.53488372093023%;
+  align-self: center;
+  position: relative;
+}
+
+.banner-header .header-controls input {
+  width: 82.03125%;
+  height: 38px;
+  border: 2px solid #cccccc;
+  padding-left: 40px;
+}
+
+.banner-header .header-controls input::placeholder {
+  font-size: 14px;
+  color: inherit;
+  font-weight: 500;
+}
+
+.banner-header .header-controls .search {
+  position: absolute;
+  border: none;
+  background: none;
+  left: 4px;
+  top: 8px;
+  color: inherit;
+  font-size: 24px;
+}
+/* ./header-controls */
+/* ./header */
+
+/* footer */
+.banner-footer {
+  background: #e8e8e8;
+  color: inherit;
+  font-size: 22px;
+  font-family: inherit;
+  letter-spacing: 0.34px;
+  padding: 42px 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* footer-nav */
+.footer-container .footer-nav {
+  width: 65.143067%;
+  display: flex;
+  margin-bottom: 10px;
+  gap: 19.698187%;
+}
+
+.footer-container .footer-nav li {
+  margin-bottom: 10px;
+}
+
+.footer-container .footer-nav ul:first-child li:last-child {
+  text-decoration: underline;
+}
+/* ./footer-nav */
+
+/* footer-controls */
+.footer-container .footer-controls {
+  width: 19.62315634218289%;
+}
+.footer-container .footer-controls .footer-subscribe {
+  margin-bottom: 24px;
+}
+
+.footer-container .footer-controls .footer-subscribe form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-container .footer-controls .footer-subscribe label {
+  cursor: pointer;
+}
+
+.footer-container .footer-controls .footer-subscribe input {
+  padding: 0;
+  border: 2px solid #cccccc;
+  height: 30px;
+}
+
+.footer-container .footer-controls .footer-subscribe input::placeholder {
+  font-size: 14px;
+  color: inherit;
+  padding-left: 10px;
+}
+
+.footer-container .footer-controls .footer-subscribe .subscribe {
+  width: 76px;
+  height: 26px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.footer-container .footer-controls .footer-social-media ul {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+/* ./footer */
+
+/* content */
+.content {
+  text-align: center;
+  font-family: inherit;
+}
+
+hr {
+  color: #cccccc;
+  margin-bottom: 20px;
+}
+
+li {
+  position: relative;
+}
+
+/* content-header */
+.content .banner-nav {
+  background: #2b2b2b;
+  font-family: 'Playfair Display', sans-serif;
+  margin-bottom: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.content .banner-nav .header-nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  color: #e8e8e8;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.content .header-nav ul a:hover {
+  text-decoration: underline;
+}
+/* ./content-header */
+
+/* content-main */
+
+/* content-main catalog-preview */
+.content .catalog-preview {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+/* content-main catalog-preview-header */
+.content .catalog-preview header {
+  margin-bottom: 24px;
+}
+
+.content .catalog-preview > header > h1 {
+  color: #2b2b2b;
+  font-size: 36px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.content .catalog-preview > header > h1:hover {
+  text-decoration: underline;
+}
+/* ./content-main catalog-preview-header */
+
+/* content-main catalog-preview product-tiles */
+.content .catalog-preview .product-tiles {
+  display: flex;
+  gap: 1.769911504424779%;
+  margin-bottom: 66px;
+}
+
+/* content-main catalog-preview product-tile */
+input[type='checkbox'] {
+  display: none;
+}
+
+input[type='checkbox']:checked + label i.fa-solid {
+  display: inline;
+}
+
+label.heart {
+  position: absolute;
+  cursor: pointer;
+  top: 20px;
+  right: 44px;
+  z-index: 1;
+}
+
+i.content-heart {
+  color: inherit;
+  font-size: 24px;
+  position: absolute;
+  z-index: 1;
+}
+
+i.fa-solid.fa-heart {
+  color: inherit;
+  position: absolute;
+  font-size: 24px;
+  left: 0px;
+  top: 0px;
+  display: none;
+  z-index: 1;
+}
+
+.catalog-preview .product-tile > header {
+  margin-bottom: 10px;
+}
+
+.catalog-preview .product-tile picture {
+  display: block;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.catalog-preview .product-tile img[src~='Thumbnail'] {
+  width: 100%;
+  transition: transform 0.25s linear;
+}
+
+.catalog-preview .product-tile img[src~='Thumbnail']:hover {
+  transform: scale(1.2);
+}
+
+.catalog-preview .product-tile > header h1 {
+  margin-bottom: 10px;
+  font-size: 22px;
+  font-weight: bold;
+  letter-spacing: 0.8px;
+}
+
+.product-tiles .product-tile .product-price {
+  font-size: 22px;
+  letter-spacing: 0.8px;
+}
+/* ./content-main catalog-preview product-tile */
+
+/* ./content-main catalog-preview product-tiles */
+
+/* content-main catalog-preview-footer */
+.catalog-preview .view-products {
+  display: inline-block;
+  width: fit-content;
+  padding: 14px 16px;
+  font-family: 'Roboto', sans-serif;
+  border: 1px solid #2b2b2b;
+  color: #2b2b2b;
+  font-size: 22px;
+  letter-spacing: 0.88px;
+  margin: 0 auto;
+  background: none;
+}
+
+.view-products:hover {
+  background-color: #2b2b2b;
+  color: #fff;
+}
+
+.chevron {
+  position: absolute;
+  font-size: 18px;
+  border: none;
+  background: none;
+  top: 200px;
+}
+
+.chevron-left {
+  left: -40px;
+}
+
+.chevron-right {
+  right: -40px;
+}
+/* ./content-main catalog-preview-footer */
+
+/* ./content-main catalog-preview */
+
+/* content-main oliver-pecker */
+.content .article-oliver-pecker {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 134px;
+  color: inherit;
+}
+
+.content .article-oliver-pecker picture {
+  margin-right: 128px;
+}
+
+.content .article-oliver-pecker picture img {
+  width: 100%;
+}
+
+.content .article-oliver-pecker .article {
+  width: 41.44542772861357%;
+}
+
+.content .article-oliver-pecker h1 {
+  font-family: inherit;
+  font-size: 44px;
+  letter-spacing: 0.66px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.content .article-oliver-pecker p {
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.33px;
+  line-height: 43px;
+  text-align: justify;
+}
+
+.content .article-oliver-pecker p:nth-of-type(1) {
+  margin-bottom: 68px;
+}
+/* ./content-main oliver-pecker */
+
+/* ./content-main */
+
+/* ./content */
+
+/* content-gadgets */
+
+/* ./content-gadgets */
