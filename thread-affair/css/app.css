@@ -488,7 +488,7 @@ a {
 }
 
 .banner-main-inner > div .banner-cta {
-  background-color: none;
+  background: none;
   display: inline-block;
   margin-top: 42px;
   border: 2px solid #ff6b6b;
@@ -497,7 +497,6 @@ a {
   line-height: 24px;
   color: #ff6b6b;
   padding: 24px 40px;
-  width: fit-content;
   text-transform: uppercase;
   transition: background-color 0.2s linear, color 0.2s linear;
 }
@@ -622,7 +621,7 @@ a {
 }
 
 .home-social a {
-  background-color: none;
+  background: none;
   display: inline-flex;
   border: 2px solid #5e5e5e;
   border-radius: 50%;
