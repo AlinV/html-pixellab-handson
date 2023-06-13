@@ -390,12 +390,12 @@ button {
 .banner-header {
   background: #000 url('../images/banner.png') no-repeat center center / cover;
   height: 497px;
+  padding-top: 30px;
 }
 
 .banner-header .banner-header-inner {
   display: flex;
   justify-content: space-around;
-  padding-top: 30px;
 }
 
 /* header-contact */
@@ -545,15 +545,6 @@ button {
   font-family: inherit;
 }
 
-hr {
-  color: #cccccc;
-  margin-bottom: 20px;
-}
-
-li {
-  position: relative;
-}
-
 /* content-header */
 .content .banner-nav {
   background: #2b2b2b;
@@ -584,6 +575,8 @@ li {
 .content .catalog-preview {
   position: relative;
   margin-bottom: 100px;
+  padding-top: 20px;
+  border-top: 2px solid #cccccc;
 }
 
 /* content-main catalog-preview-header */
@@ -611,6 +604,10 @@ li {
 }
 
 /* content-main catalog-preview product-tile */
+.catalog-preview .product-tile {
+  position: relative;
+}
+
 input[type='checkbox'] {
   display: none;
 }
@@ -654,12 +651,16 @@ i.fa-solid.fa-heart {
   margin-bottom: 20px;
 }
 
+.catalog-preview .product-tile picture a {
+  display: block;
+}
+
 .catalog-preview .product-tile img[src~='Thumbnail'] {
   width: 100%;
   transition: transform 0.25s linear;
 }
 
-.catalog-preview .product-tile img[src~='Thumbnail']:hover {
+.catalog-preview .product-tile a:hover img[src~='Thumbnail'] {
   transform: scale(1.2);
 }
 
@@ -717,26 +718,22 @@ i.fa-solid.fa-heart {
 /* ./content-main catalog-preview */
 
 /* content-main oliver-pecker */
-.content .article-oliver-pecker {
+.content .home-content {
   display: flex;
   justify-content: space-between;
   margin-bottom: 134px;
   color: inherit;
 }
 
-.content .article-oliver-pecker picture {
-  margin-right: 128px;
-}
-
-.content .article-oliver-pecker picture img {
+.content .home-content picture img {
   width: 100%;
 }
 
-.content .article-oliver-pecker .article {
+.content .home-content .home-content-copy {
   width: 41.44542772861357%;
 }
 
-.content .article-oliver-pecker h1 {
+.content .home-content .home-content-copy h1 {
   font-family: inherit;
   font-size: 44px;
   letter-spacing: 0.66px;
@@ -744,7 +741,7 @@ i.fa-solid.fa-heart {
   margin-bottom: 40px;
 }
 
-.content .article-oliver-pecker p {
+.content .home-content .home-content-copy p {
   font-size: 22px;
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.33px;
@@ -752,7 +749,7 @@ i.fa-solid.fa-heart {
   text-align: justify;
 }
 
-.content .article-oliver-pecker p:nth-of-type(1) {
+.content .home-content .home-content-copy p:nth-of-type(1) {
   margin-bottom: 68px;
 }
 /* ./content-main oliver-pecker */
